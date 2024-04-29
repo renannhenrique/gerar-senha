@@ -1,0 +1,227 @@
+@charset 'utf-8';
+
+*{margin:0; padding: 0;}
+
+
+body{
+    background-color: #f8fafd;
+    font-family: "Inter", sans-serif;
+    color: #252525;
+    padding: 2rem;
+    
+}
+
+
+.interface{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+main{
+    width: 90%;
+    max-width: 780px;
+    margin: 0 auto;
+   
+}
+
+.box{
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(132, 148, 165, 0.6);
+    border-radius: 5px 5px 0 0;
+}
+
+.password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    z-index: 2;
+}
+
+.password .text{
+    flex: 1;
+}
+
+.password .text input[type="text"]{
+    font-family: "Inconsolata", sans-serif;
+    width: 100%;
+    border: 0;
+    height: 52px;
+    outline: none;
+    font-size: 3rem;
+    cursor: default;
+    font-weight: bold;
+    padding-left: 10;
+}
+
+#copy2, #renew{
+    width: 30px;
+    border-radius: 3px;
+    border: 1px solid #cecece;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    border:0;
+}
+
+
+
+
+
+.hero{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.hero .title{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+.hero .sub-title{
+    font-size: 1.125rem;
+    color: #828282;
+}
+
+
+.barra-fundo{
+    margin-bottom: 3rem;
+    height: 3px;
+    background-color: #cecece;
+}
+
+.barra{
+    margin-bottom: 3rem;
+    height: 3px;
+   
+   
+}
+
+ .customize {
+    padding: 1rem 1.5rem;
+}
+
+.customize .title{
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+}
+
+.actions2{
+    display: flex;
+    gap: 3rem;
+    color: #828282;
+}
+
+
+.password-lenght{
+    flex: 1;
+}
+
+/*Estilizando o input range*/
+.customize .password-lenght input[type="range"]{
+    appearance: none;
+    height: 10px;
+    background: #ddd;
+    outline: none;
+    border-radius: 8px;
+    width: 100%;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    margin-top: 1rem;
+    cursor: pointer;
+    
+}
+
+
+.customize .password-lenght input[type="range"]:hover{
+    opacity: 1;
+   
+}
+
+
+/*Estilizando a bolinha do input range*/
+.customize .password-lenght input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background: #9b51e0;
+    cursor: pointer;
+}
+
+
+.checkbox-container{
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.checkbox-container input[type="checkbox"]{
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-container .checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    transition: all 0.2s;
+    background: #9b51e0;
+}
+
+/*Condição padrão do css*/
+.checkbox-container:hover input ~ .checkmark{
+    background: #ccc;
+}
+
+/*Quando o campo for selecionado = checked*/
+.checkbox-container:hover input:checked ~ .checkmark{
+    background: #9b51e0;
+}
+
+/*Flexinha dentro da caixa dizendo que foi selecionada*/
+.checkbox-container .checkmark:after{
+    content: "";
+    display: none;
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+
+}
+
+.checkbox-container input:checked ~ .checkmark:after{
+    display: block;
+}
+
+
+footer{
+    margin-top: 40px;
+    font-size: 11px;
+}
+
+
+
+
